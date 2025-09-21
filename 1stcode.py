@@ -4,3 +4,4 @@ print("Yoo Dude!")
 a=input("Enter your name: ");
 name(a)
 
+
